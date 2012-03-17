@@ -1,0 +1,36 @@
+{ name : "Surgical Safety Checklist", 
+	note : "This checklist is not intended to be comprehensive. Additions and modifications to fit local practice are encouraged",
+	version : 1,
+	checklists: [
+	{ name: "Sign in", 
+		description: "Before induction of anaesthesia",
+		items: [ 
+			{ name : "Patient has confirmed identity" },
+			{ name : "Patient has confirmed site" },
+			{ name : "Patient has confirmed procedure" },
+			{ name : "Patient has confirmed consent" },
+			{ name : "Site marked/not applicable" },
+			{ name : "Anaesthesia safety check completed" },
+			{ name : "Pulse oximeter on patient and functioning" },
+			{ name : "Does patient have a known allery?", 
+				options : [ 
+					{ option : "No"},
+					{ option : "Yes"}	
+				]},
+			{ name : "Does patient have a difficult airway/aspiration risk?",
+				options : [
+					{ option: "No"},
+					{ option: "Yes, and equipment/assistance available"}
+				]},
+			{ name : "Does patient have a risk of >500ml blood loss (7ml/kg in children)?",
+				options:[
+					{option: "No"},
+					{option: "Yes, and adequate intravenous access and fluids planned."}
+				]},
+		]},
+	{ name: "Time out",
+		description: "Before skin incision"},
+	{ name: "Before patient leaves operating room", 
+		description: "Before patient leaves operating room"}
+	]
+}
