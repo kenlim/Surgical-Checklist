@@ -55,7 +55,16 @@
 	{ name: "Before patient leaves operating room", 
 		description: "Before patient leaves operating room",
 		items: [
-			
+			{name: "Confirm the name of the procedure recorded",
+				reviewer: "Nursing team"},
+			{name: "Confirm that instrument, sponge and needle counts are correct (or not applicable)",
+				reviewer: "Nursing team"},
+			{name: "Confirm how the specimen is labelled (including patient name)",
+				reviewer: "Nursing team"},
+			{name: "Confirm whether there are any equipment problems to be addressed",
+				reviewer: "Nursing team"},
+			{name: "Review the key concerns for recovery and management of this patient",
+				reviewers: ["Surgeon", "Anaesthesia professional", "Nursing team"},		
 		]}
 	]
 }
