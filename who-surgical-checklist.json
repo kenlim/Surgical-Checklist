@@ -26,11 +26,36 @@
 				options:[
 					{option: "No"},
 					{option: "Yes, and adequate intravenous access and fluids planned."}
-				]},
+				]}
 		]},
 	{ name: "Time out",
-		description: "Before skin incision"},
+		description: "Before skin incision",
+		items: [ 
+			{ name : "Confirm all team members have introduced themselves by name and role." },
+			{ name : "Surgeon, anaesthesia professional and nurse verbally confirm patient" },
+			{ name : "Surgeon, anaesthesia professional and nurse verbally confirm site" },
+			{ name : "Surgeon, anaesthesia professional and nurse verbally confirm procedure" },
+			{ name : "What are the critical or unexpected steps, operative duration, anticipated blood loss?",
+				reviewer: "Surgeon"}
+			{ name : "Are tere any patient-specific converns?",
+				reviewer: "Anaesthesia team"},
+			{ name : "Has sterility (including indicator results) been confirmed? Are there equipment issues or any concerns?",
+				reviewer: "Nursing team"},
+			{ name : "Has antibiotic prophylaxis been given within the last 60 minutes?",
+				options: [
+					{option: "Yes"},
+					{option: "Not applicable"}
+				]},
+			{ name : "Is essential imaging displayed",
+				options: [
+					{option: "Yes"},
+					{option: "Not applicable"}
+				]}
+		]},
 	{ name: "Before patient leaves operating room", 
-		description: "Before patient leaves operating room"}
+		description: "Before patient leaves operating room",
+		items: [
+			
+		]}
 	]
 }
