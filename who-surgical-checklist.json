@@ -80,7 +80,7 @@
 			{"name" : "Confirm whether there are any equipment problems to be addressed",
 				"owners" : ["Nursing team"]},
 			{"name" : "Review the key concerns for recovery and management of this patient",
-				"owners" : ["Surgeon", "Anaesthesia professional", "Nursing team"]},		
+				"owners" : ["Surgeon", "Anaesthesia professional", "Nursing team"]}		
 		]}
 	]
 }
