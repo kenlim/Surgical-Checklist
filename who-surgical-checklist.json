@@ -1,86 +1,86 @@
-{ name : "Surgical Safety Checklist", 
-	note : "This checklist is not intended to be comprehensive. Additions and modifications to fit local practice are encouraged",
-	version : 1,
-	checklists: [
-	{ name: "Sign in", 
-		description: "Before induction of anaesthesia",
-		items: [ 
-			{ name : "Patient has confirmed identity",
-				owners: ["All"] },
-			{ name : "Patient has confirmed site",
-				owners: ["All"] },
-			{ name : "Patient has confirmed procedure",
-				owners: ["All"] },
-			{ name : "Patient has confirmed consent",
-				owners: ["All"] },
-			{ name : "Site marked/not applicable" ,
-				owners: ["All"] },
-			{ name : "Anaesthesia safety check completed" ,
-				owners: ["All"] },
-			{ name : "Pulse oximeter on patient and functioning",
-				owners: ["All"]  },
-			{ name : "Does patient have a known allergy?",
-				owners: ["All"] , 
-				options : [ 
-					{ option : "No"},
-					{ option : "Yes"}	
+{ "name" : "Surgical Safety Checklist", 
+	"note" : "This checklist is not intended to be comprehensive. Additions and modifications to fit local practice are encouraged",
+	"version" : 1,
+	"checklists": [
+	{ "name" : "Sign in", 
+		"description" : "Before induction of anaesthesia",
+		"items" : [ 
+			{ "name" : "Patient has confirmed identity",
+				"owners" : ["All"] },
+			{ "name" : "Patient has confirmed site",
+				"owners" : ["All"] },
+			{ "name" : "Patient has confirmed procedure",
+				"owners" : ["All"] },
+			{ "name" : "Patient has confirmed consent",
+				"owners" : ["All"] },
+			{ "name" : "Site marked/not applicable" ,
+				"owners" : ["All"] },
+			{ "name" : "Anaesthesia safety check completed" ,
+				"owners" : ["All"] },
+			{ "name" : "Pulse oximeter on patient and functioning",
+				"owners" : ["All"]  },
+			{ "name" : "Does patient have a known allergy?",
+				"owners" : ["All"] , 
+				"options" : [ 
+					{ "option" : "No"},
+					{ "option" : "Yes"}	
 				]},
-			{ name : "Does patient have a difficult airway/aspiration risk?",
-				owners: ["All"] ,
-				options : [
-					{ option: "No"},
-					{ option: "Yes, and equipment/assistance available"}
+			{ "name" : "Does patient have a difficult airway/aspiration risk?",
+				"owners" : ["All"] ,
+				"options" : [
+					{ "option" : "No"},
+					{ "option" : "Yes, and equipment/assistance available"}
 				]},
-			{ name : "Does patient have a risk of >500ml blood loss (7ml/kg in children)?",
-				owners: ["All"] ,
-				options:[
-					{option: "No"},
-					{option: "Yes, and adequate intravenous access and fluids planned."}
+			{ "name" : "Does patient have a risk of >500ml blood loss (7ml/kg in children)?",
+				"owners" : ["All"] ,
+				"options" :[
+					{"option" : "No"},
+					{"option" : "Yes, and adequate intravenous access and fluids planned."}
 				]}
 		]},
-	{ name: "Time out",
-		description: "Before skin incision",
-		items: [ 
-			{ name : "Confirm all team members have introduced themselves by name and role.",
-				owners: ["All"]  },
-			{ name : "Surgeon, anaesthesia professional and nurse verbally confirm patient",
-				owners: ["All"]  },
-			{ name : "Surgeon, anaesthesia professional and nurse verbally confirm site",
-				owners: ["All"]  },
-			{ name : "Surgeon, anaesthesia professional and nurse verbally confirm procedure",
-				owners: ["All"]  },
-			{ name : "What are the critical or unexpected steps, operative duration, anticipated blood loss?",
-				owners: ["Surgeon"]},
-			{ name : "Are there any patient-specific concerns?",
-				owners: ["Anaesthesia team"]},
-			{ name : "Has sterility (including indicator results) been confirmed? Are there equipment issues or any concerns?",
-				owners: ["Nursing team"]},
-			{ name : "Has antibiotic prophylaxis been given within the last 60 minutes?",
-				owners: ["All"],
-				options: [
-					{option: "Yes"},
-					{option: "Not applicable"}
+	{ "name" : "Time out",
+		"description" : "Before skin incision",
+		"items" : [ 
+			{ "name" : "Confirm all team members have introduced themselves by name and role.",
+				"owners" : ["All"]  },
+			{ "name" : "Surgeon, anaesthesia professional and nurse verbally confirm patient",
+				"owners" : ["All"]  },
+			{ "name" : "Surgeon, anaesthesia professional and nurse verbally confirm site",
+				"owners" : ["All"]  },
+			{ "name" : "Surgeon, anaesthesia professional and nurse verbally confirm procedure",
+				"owners" : ["All"]  },
+			{ "name" : "What are the critical or unexpected steps, operative duration, anticipated blood loss?",
+				"owners" : ["Surgeon"]},
+			{ "name" : "Are there any patient-specific concerns?",
+				"owners" : ["Anaesthesia team"]},
+			{ "name" : "Has sterility (including indicator results) been confirmed? Are there equipment issues or any concerns?",
+				"owners" : ["Nursing team"]},
+			{ "name" : "Has antibiotic prophylaxis been given within the last 60 minutes?",
+				"owners" : ["All"],
+				"options" : [
+					{"option" : "Yes"},
+					{"option" : "Not applicable"}
 				]},
-			{ name : "Is essential imaging displayed",
-				owners: ["All"],
-				options: [
-					{option: "Yes"},
-					{option: "Not applicable"}
+			{ "name" : "Is essential imaging displayed",
+				"owners" : ["All"],
+				"options" : [
+					{"option" : "Yes"},
+					{"option" : "Not applicable"}
 				]}
 		]},
-	{ name: "Sign out", 
-		description: "Before patient leaves operating room",
-		items: [
-			{name: "Confirm the name of the procedure recorded",
-				owners: ["Nursing team"]},
-			{name: "Confirm that instrument, sponge and needle counts are correct (or not applicable)",
-				owners: ["Nursing team"]},
-			{name: "Confirm how the specimen is labelled (including patient name)",
-				owners: ["Nursing team"]},
-			{name: "Confirm whether there are any equipment problems to be addressed",
-				owners: ["Nursing team"]},
-			{name: "Review the key concerns for recovery and management of this patient",
-				owners: ["Surgeon", "Anaesthesia professional", "Nursing team"]},		
+	{ "name" : "Sign out", 
+		"description" : "Before patient leaves operating room",
+		"items" : [
+			{"name" : "Confirm the name of the procedure recorded",
+				"owners" : ["Nursing team"]},
+			{"name" : "Confirm that instrument, sponge and needle counts are correct (or not applicable)",
+				"owners" : ["Nursing team"]},
+			{"name" : "Confirm how the specimen is labelled (including patient name)",
+				"owners" : ["Nursing team"]},
+			{"name" : "Confirm whether there are any equipment problems to be addressed",
+				"owners" : ["Nursing team"]},
+			{"name" : "Review the key concerns for recovery and management of this patient",
+				"owners" : ["Surgeon", "Anaesthesia professional", "Nursing team"]},		
 		]}
 	]
 }
