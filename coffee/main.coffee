@@ -25,10 +25,12 @@ DocumentView = Backbone.View.extend(
 		)
 
 	template : _.template($('#document-template').html())
+	listTemplate :  _.template($('#checklist-template').html())
 
 	render : () -> 
 		log("finish!")
 		$(this.el).html(this.template(this.model.toJSON()))
+		$(this.el).append(this.listTemplate(checklist)) for checklist in this.model.get("checklists")
 		return this
 )
 
