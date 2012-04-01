@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Simple checklist app</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>	
+	<script src="js/underscore-min.js"></script>
+	<script src="js/backbone.js"></script>
+
+</head>
+<body>
+<h1>This is a simple checklist application</h1>
+<div id="documentView"></div>
+
+<script type="text/template" id="document-template">
+	<h1><%= name %></h1>
+	<p><%= note %></p>
+	<p><%= version %></p>
+</script>
+
+<script type="text/template" id="checklist-template">
+	<ol></ol>
+</script>
+
+<script type="text/template" id="item-template">
+	<li></li>
+</script>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>	
+</html>
