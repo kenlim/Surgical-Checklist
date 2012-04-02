@@ -7,10 +7,6 @@ ChecklistDoc = Backbone.Model.extend(
 		this.url = stuff.url
 )
 
-Checklist = Backbone.Model.extend()
-
-Item = Backbone.Model.extend()
-
 DocumentView = Backbone.View.extend(
 	model : ChecklistDoc
 

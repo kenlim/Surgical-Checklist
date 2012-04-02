@@ -1,5 +1,5 @@
 (function() {
-  var Checklist, ChecklistDoc, DocumentView, Item, appView, log,
+  var ChecklistDoc, DocumentView, appView, log,
     __slice = Array.prototype.slice;
 
   log = function() {
@@ -12,7 +12,7 @@
     initialize: function(stuff) {
       return this.url = stuff.url;
     }
-  }), Checklist = Backbone.Model.extend(), Item = Backbone.Model.extend(), DocumentView = Backbone.View.extend({
+  }), DocumentView = Backbone.View.extend({
     model: ChecklistDoc,
     el: "#documentView",
     initialize: function() {
