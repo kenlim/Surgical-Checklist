@@ -24,13 +24,10 @@ DocumentView = Backbone.View.extend(
 			error : (model, response) -> log("Error fetching DocumentView", model, response)
 		)
 
-	template : _.template($('#document-template').html())
-	listTemplate :  _.template($('#checklist-template').html())
 
 	render : () -> 
 		log("finish!")
-		$(this.el).html(this.template(this.model.toJSON()))
-		$(this.el).append(this.listTemplate(checklist)) for checklist in this.model.get("checklists")
+		$(this.el).html(Mustache.render($('#document-template').html(), this.model.toJSON()))
 		return this
 )
 

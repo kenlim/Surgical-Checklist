@@ -26,17 +26,9 @@
         }
       });
     },
-    template: _.template($('#document-template').html()),
-    listTemplate: _.template($('#checklist-template').html()),
     render: function() {
-      var checklist, _i, _len, _ref;
       log("finish!");
-      $(this.el).html(this.template(this.model.toJSON()));
-      _ref = this.model.get("checklists");
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        checklist = _ref[_i];
-        $(this.el).append(this.listTemplate(checklist));
-      }
+      $(this.el).html(Mustache.render($('#document-template').html(), this.model.toJSON()));
       return this;
     }
   }), appView = new DocumentView({

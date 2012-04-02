@@ -12,21 +12,27 @@
 <div id="documentView"></div>
 
 <script type="text/template" id="document-template">
-	<h1><%= name %></h1>
-	<p><%= note %></p>
-	<p><%= version %></p>
+	<h1>{{name}}(version: {{version}})</h1>
+	<p>{{note}}</p>
+
+	{{#checklists}}
+	<h2>{{name}}</h2>
+	<p>{{description}}</p>
+	<ol>
+		{{#items}}
+		<li>{{name}} 
+			<ul>
+			{{#owners}}
+			<li>{{.}}</li>
+			{{/owners}}
+			</ul>
+		</li>
+		{{/items}}
+	</ol>
+	{{/checklists}}
 </script>
 
-<script type="text/template" id="checklist-template">
-	<h2><%= name %></h2>
-	<p><%=  description %></p>
-	<p>Item count <%= items.length %>
-</script>
-
-<script type="text/template" id="item-template">
-	<li></li>
-</script>
-
+<script type="text/javascript" src="js/mustache.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>	
 </html>
